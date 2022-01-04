@@ -6,4 +6,9 @@ void main(List<String> args) {
   };
 
   print(person['job']);
+  person['jobs'] = 'fluter';
+  print(person['jobs']);
+
+  person.addAll({'name': 'rabin'});
+  print(person);
 }
