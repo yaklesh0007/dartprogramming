@@ -7,4 +7,7 @@ void main(List<String> args) {
   final newcompare = nums.where((element) {
     return element > 50;
   }).toList();
+
+  int total = 0;
+  nums.forEach((element) => total += element);
 }
