@@ -9,7 +9,11 @@ void main(List<String> args) {
   double totalamt = 0;
 
   for (final or in order) {
-    totalamt += pizzaPrices[or]!;
+    if (pizzaPrices[or] != null) {
+      totalamt += pizzaPrices[or]!;
+    } else {
+      print('this $or is not available');
+    }
   }
   print(totalamt);
 }
